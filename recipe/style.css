@@ -2,18 +2,23 @@
     font-family: "Young Serif", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  .young-serif-regular {
-    font-family: "Young Serif", serif;
-    font-weight: 400;
+}
+
+
+.outfit-uniquifier {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
     font-style: normal;
-  }
-*{
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}    
-:root{
+}
+
+:root {
     --White: hsl(0, 0%, 100%);
     --Stone-100: hsl(30, 54%, 90%);
     --Stone-150: hsl(30, 18%, 87%);
@@ -22,4 +27,126 @@
     --Brown-800: hsl(14, 45%, 36%);
     --Rose-800: hsl(332, 51%, 32%);
     --Rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+    background-color: var(--Stone-100);
+}
+
+.all {
+    margin: 3rem auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    border-radius: 20px;
+    max-width: 1000px;
+    height: fit-content;
+}
+
+.omelette img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+}
+
+.omelette {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+}
+
+.omelette h1 {
+    font-size: 30px;
+    font-family: "Young Serif", serif;
+}
+
+.omelette p {
+    font-family: "Outfit", serif;
+}
+
+.preparation {
+    background-color: var(--Rose-50);
+    border-radius: 10px;
+    height: 200px;
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.preparation li {
+    font-family: "Outfit", serif;
+    margin-bottom: 15px;
+    margin-left: 20px;
+
+
+}
+
+.preparation h2 {
+    color: var(--Rose-800);
+}
+
+h2 {
+    color: var(--Brown-800);
+    font-family: "Young Serif", serif;
+    margin-bottom: 1em;
+}
+
+.ingredients {
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+.ingredients ul {
+    display: flex;
+    flex-direction: column;
+    font-family: "Outfit", serif;
+}
+
+.ingredients li {
+    margin-bottom: 15px;
+    margin-left: 25px;
+    padding-left: 20px;
+}
+
+.instructions {
+    margin-top: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--Stone-150);
+    font-family: "Outfit", serif;
+}
+
+.instructions span {
+    font-weight: bold;
+}
+
+.instructions li {
+    margin-bottom: 15px;
+    margin-left: 25px;
+    padding-left: 20px;
+}
+
+.nutrition {
+    margin-top: 2em;
+    font-family: "Outfit", serif;
+}
+
+.nutrition p {
+    margin-bottom: 1em;
+}
+
+.nutrition table {
+    width: 75%;
+
+}
+
+.nutrition table tr td {
+    border-bottom: 1px solid var(--Stone-150);
+    padding: 10px;
+}
+
+
+.nutrition table tr td:nth-child(2) {
+    color: var(--Brown-800);
+    font-weight: bold;
 }
